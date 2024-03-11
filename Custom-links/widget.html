@@ -1,27 +1,67 @@
 
 <style>
-        #bc-simple-text-{{_.id}} {
-            color: {{color}};
-            background: {{background_color}};
-            font-size: {{font_size.value}}{{font_size.type}};
-            font-weight: {{font_weight}};
-            text-align: {{text_align.horizontal}};
-            padding-top: {{padding.top.value}}{{padding.top.type}};
-            padding-right: {{padding.right.value}}{{padding.right.type}};
-            padding-bottom: {{padding.bottom.value}}{{padding.bottom.type}};
-            padding-left: {{padding.left.value}}{{padding.left.type}};
-            margin-top: {{margin.top.value}}{{margin.top.type}};
-            margin-right: {{margin.right.value}}{{margin.right.type}};
-            margin-bottom: {{margin.bottom.value}}{{margin.bottom.type}};
-            margin-left: {{margin.left.value}}{{margin.left.type}};
-        }
-        
-        #widget-template-title {
-            text-transform: capitalize;
-            text-align: center;
-        }
-    </style>
+     
+    .widget-button-blog-section-{{_.id}}
+      {
+          background: {{background_color}};
+          font-size: {{font_size.value}}{{font_size.type}};
+          font-weight: {{font_weight}};
+      }
+  
+      .footer-ul a{
+          text-decoration: none;
+          color: #000000;
+          transition: color .15s ease;
+          font-size: 1rem;
+         font-weight: 400;
+         
+      }
+      .footer_li_style{
+      margin-bottom: 10px;
+      list-style: none;
+      line-height: 1;
+      font-family: var(--typefamily-primary);
+      }
+  
+      .footer-ul{
+          margin-left: 0px;
+  
+      }
     
-    <h1 id='widget-template-title'>Custom links</h1>
-    <p id='bc-simple-text-{{_.id}}'>{{content}}</p>
+      .footer-ul{
+          margin-bottom: 0;
+      }
+     
 
+      .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.box img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+    
+  </style>
+  
+<ul class="footer-ul ">
+    <div class="container">
+        {{#each linksections }}
+        <div class="box">
+            <h3>{{title}}</h3>
+            <img src="{{imglink}}" alt="Box 1">
+            <p>{{content}}</p>
+
+        </div>
+        {{/each}}
+    </div>
+</ul>

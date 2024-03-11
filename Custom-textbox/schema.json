@@ -138,6 +138,17 @@
             }
           }
         ]
+      },
+      {
+        "label": "Sub contents",
+        "settings": [
+          {
+            "type": "input",
+            "id": "subcontent",
+            "label": "Sub Content",
+            "default": "Add your sub contents here"
+          }
+        ]
       }
     ]
   }

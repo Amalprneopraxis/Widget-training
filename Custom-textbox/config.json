@@ -1,15 +1,15 @@
 {
-  "text": "Simple Text with Styling",
-  "_.id": "1",
-  "color": "white",
+  "content": "I am a sample text",
+  "color": "#FFFFFF",
   "background_color": "#3C1F8C",
   "font_size": {
     "value": 24,
     "type": "px"
   },
-  "font_weight": "bold",
+  "font_weight": "500",
   "text_align": {
-    "horizontal": "center"
+    "horizontal": "center",
+    "vertical": "middle"
   },
   "margin": {
     "top": {
@@ -47,5 +47,5 @@
       "type": "px"
     }
   },
-  "content": "I am a sample text"
+  "subcontent": "Add your sub contents here"
 }

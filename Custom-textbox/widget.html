@@ -20,9 +20,20 @@
             text-transform: capitalize;
             text-align: center;
         }
+        #btn-btntext-{{_.id}}{
+            padding: {{buttonPadding.top.value}}{{buttonPadding.top.type}} {{buttonPadding.right.value}}{{buttonPadding.right.type}} {{buttonPadding.bottom.value}}{{buttonPadding.bottom.type}} {{buttonPadding.left.value}}{{buttonPadding.left.type}};
+            border-radius: {{borderRadius}}px;
+            background-color: {{btnBackground}};
+        }
+        .textlink{
+            text-decoration: none;
+            color: {{btntextcolor}};
+        }
     </style>
     
     <h1 id='widget-template-title'>Custom textbox</h1>
     <p id='bc-simple-text-{{_.id}}'>{{content}}</p>
     <p> {{subcontent}}</p>
+    <p>{{textContent}}</p>
+    <a href="{{btnlink}}" class="textlink"><button id="btn-btntext-{{_.id}}">{{btntext}}</button></a>
 

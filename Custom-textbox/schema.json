@@ -1,4 +1,12 @@
-[
+[ {
+    "type": "hidden",
+    "settings": [
+      {
+        "id": "textContent",
+        "default": "You can use this widget to input text into the page."
+      }
+    ]
+  },
   {
     "type": "tab",
     "label": "Design",
@@ -147,6 +155,86 @@
             "id": "subcontent",
             "label": "Sub Content",
             "default": "Add your sub contents here"
+          },
+          {
+            "type": "range",
+            "label": "Border radius",
+            "id": "borderRadius",
+            "default": 4,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button",
+        "settings": [
+          {
+            "type": "input",
+            "id": "btntext",
+            "label": "Button Text",
+            "default": "View button"
+          },
+          {
+            "type": "input",
+            "id": "btnBackground",
+            "label": "Button Background Color",
+            "default": "red"
+          },
+          {
+            "type": "input",
+            "id": "btntextcolor",
+            "label": "Button Text Color",
+            "default": "#000000"
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding (px)",
+            "id": "buttonPadding",
+            "default": {
+              "top": {
+                "value": "8",
+                "type": "px"
+              },
+              "right": {
+                "value": "24",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "8",
+                "type": "px"
+              },
+              "left": {
+                "value": "24",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "range",
+            "label": "Border radius",
+            "id": "borderRadius",
+            "default": 4,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "type": "input",
+            "id": "btnlink",
+            "label": "Button Link",
+            "default": "#"
           }
         ]
       }

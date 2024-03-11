@@ -1,4 +1,5 @@
 {
+  "textContent": "You can use this widget to input text into the page.",
   "content": "I am a sample text",
   "color": "#FFFFFF",
   "background_color": "#3C1F8C",
@@ -47,5 +48,28 @@
       "type": "px"
     }
   },
-  "subcontent": "Add your sub contents here"
+  "subcontent": "Add your sub contents here",
+  "borderRadius": 4,
+  "btntext": "View button",
+  "btnBackground": "red",
+  "btntextcolor": "#000000",
+  "buttonPadding": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "24",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "24",
+      "type": "px"
+    }
+  },
+  "btnlink": "#"
 }
